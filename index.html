@@ -3,13 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Young+Serif&display=swap"
         rel="stylesheet">
+
+    <!-- Swiper CSS -->
+     <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+
+     <!-- Favicon -->
+
      <link rel="shortcut icon" href="img/icon_roundedcorners.svg" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+
+     <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+
     <title>ValWind</title>
 </head>
 <body>
@@ -70,17 +82,49 @@
         </section>
         <section class="reviews" id="reviews">
             <img src="img/icon_transparent.svg" alt="ValWind Logo">
-            <div class="review-cards">
-                <div class="review-card">
-                    <p>Finally, an app that actually helps me track skins and match progress in Valorant.
-                         The design is clean, the store updates are fast, and everything just works.
-                          Feels like Riot should've built this themselves.</p>
-                    <img src="img/breach-avatar.jpg" alt="Breach Avatar">
-                    <div class="review-card-info">
-                        <p>Kenol</p>
-                        <p>Beta Tester</p>
+            <div class="review-cards swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <p>Finally, an app that actually helps me track skins and match progress in Valorant.
+                            The design is clean, the store updates are fast, and everything just works.
+                            Feels like Riot should've built this themselves.</p>
+                        <img src="img/breach-avatar.jpg" alt="Breach Avatar">
+                        <div class="review-card-info">
+                            <p>Kenol</p>
+                            <p>Beta Tester</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>As someone new to Valorant, this app helped me understand my account better. I can finally track my Radiant Points and
+                            know what skins I want to save up for.</p>
+                        <img src="img/Skye-Valorant.webp" alt="Skye Avatar">
+                        <div class="review-card-info">
+                            <p>VibeKay</p>
+                            <p>New Player</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>I love how lightweight this app is. No bloated features, just the data I care about — match time, session length, and
+                            currency. Super clean UI.</p>
+                        <img src="img/KAYO_icon.webp" alt="KAYO Avatar">
+                        <div class="review-card-info">
+                            <p>DataHeadshot</p>
+                            <p>Game Analyst</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>Dark mode? Region info? Clean design? You got me. ValWind nails the essentials without trying to do too much. It just
+                            fits my style.</p>
+                        <img src="img/images.jfif" alt="Phoenix Avatar">
+                        <div class="review-card-info">
+                            <p>Sk1nHunter</p>
+                            <p>Daily Player</p>
+                        </div>
                     </div>
                 </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
             </div>
         </section>
         <section class="send-question" id="faq">
@@ -117,7 +161,11 @@
             </div>
         </div>
     </footer>
-    
-    <script src="script.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="./js/swiper-bundle.min.js"></script>
+
+    <!-- JS -->
+    <script src="./js/script.js"></script>
 </body>
 </html>

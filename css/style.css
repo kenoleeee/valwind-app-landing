@@ -255,28 +255,34 @@ button:hover {
 }
 
 .review-cards {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+    width: 100%;
+    max-width: 800px;
+    padding: 0 60px;
+    margin: 0 auto;
 }
 
-.review-card {
+.swiper-slide {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 32px;
-    padding: 0 20px;
+    padding: 20px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
 }
 
-.review-card p {
+.swiper-slide-active {
+    opacity: 1;
+}
+
+.swiper-slide p {
     font-size: 24px;
     line-height: 1.5;
     color: var(--secondary-color);
     text-align: center;
 }
 
-.review-card img {
+.swiper-slide img {
     width: 48px;
     height: 48px;
     border-radius: 999px;
@@ -294,6 +300,35 @@ button:hover {
 .review-card-info p {
     color: #5D5D5D;
     font-size: var(--font-size-small);
+}
+
+/* Customize swiper navigation */
+.swiper-button-next,
+.swiper-button-prev {
+    color: var(--accent-color);
+    width: 40px;
+    height: 40px;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.swiper-pagination {
+    margin-top: 30px;
+    position: relative;
+    bottom: -15px;
+}
+
+.swiper-pagination-bullet {
+    background: var(--secondary-color);
+    margin: 0 5px;
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--accent-color);
 }
 
 /* Send question */
