@@ -11,7 +11,7 @@ This is a landing page for ValWind, a third-party companion application for Valo
 ![{41D38651-2584-4702-9F16-8F0613FD8C85}](https://github.com/user-attachments/assets/3fc49e8c-4ce1-405c-b3cd-9b3d81df5999)
 
 
-![image](https://github.com/user-attachments/assets/d368a8f4-9d46-4c32-8215-39f20281dd41)
+![{B35CEB4F-D02E-450F-AA1C-571DECD3AB61}](https://github.com/user-attachments/assets/99489c07-038e-40bb-a8bc-d2de641a5509)
 
 
 ## About ValWind App
