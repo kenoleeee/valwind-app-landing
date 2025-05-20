@@ -245,6 +245,7 @@ button:hover {
     flex-direction: column;
     align-items: center;
     padding: 80px 0;
+    width: 100%;
 }
 
 .reviews img {
@@ -269,7 +270,6 @@ button:hover {
 }
 
 .review-card p {
-    max-width: 700px;
     font-size: 24px;
     line-height: 1.5;
     color: var(--secondary-color);
@@ -403,4 +403,155 @@ footer p {
     line-height: 1.6;
     opacity: 0.9;
     max-width: 800px;
+}
+
+/* Media queries */
+
+@media (max-width: 1200px) {
+    .hero-content, .features, .promo, footer {
+        padding: 0 100px;
+    }
+    
+    .feature-cards {
+        gap: 40px;
+        padding-bottom: 100px;
+    }
+    
+    .right-side img {
+        max-width: 100%;
+        transform: translateX(0);
+    }
+
+    footer {
+        padding: 40px 100px;
+    }
+    
+}
+
+@media (max-width: 992px) {
+    .hero-content, .features, .promo, footer {
+        padding: 0 50px;
+    }
+    
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 50px;
+    }
+    
+    .left-side {
+        align-items: center;
+    }
+    
+    .right-side {
+        margin-top: 50px;
+        justify-content: center;
+    }
+    
+    .feature-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .feature-card {
+        max-width: 400px;
+    }
+    
+    .promo {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 50px;
+    }
+    
+    .promo-left-side {
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    
+    .promo-right-side {
+        justify-content: center;
+    }
+    
+    .promo-right-side img {
+        padding-top: 0;
+        max-width: 300px;
+    }
+
+    footer {
+        padding: 40px 50px;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+
+    header .subscribe {
+        margin-left: auto;
+    }
+
+    header ul {
+        display: none;
+    }
+    
+    nav {
+        margin: 20px 0;
+    }
+    
+    .hero {
+        min-height: auto;
+    }
+    
+    .left-side h1 {
+        font-size: 42px;
+    }
+    
+    .features h2 {
+        font-size: 42px;
+    }
+    
+    .promo h3 {
+        font-size: 36px;
+    }
+
+    .send-question-content {
+        border-radius:  0;
+    }
+}
+
+@media (max-width: 576px) {
+    ul {
+        gap: 30px;
+    }
+    
+    li {
+        font-size: var(--font-size-small);
+    }
+    
+    .left-side h1 {
+        font-size: 36px;
+    }
+    
+    .left-side p, .feature-card p, .review-card p {
+        font-size: 16px;
+    }
+    
+    .store-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .promo-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .send-question-content {
+        padding: 20px;
+        text-align: center;
+    }
 }

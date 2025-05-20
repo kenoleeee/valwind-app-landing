@@ -1,17 +1,12 @@
 const buttonGitLink = document.querySelector('.subscribe');
 
 buttonGitLink.addEventListener('click', () => {
-    window.open('https://github.com/ValWind', '_blank');
+    window.open('https://github.com/kuska1/ValWind', '_blank');
 });
 
-const buttonPlayStoreLink = document.querySelector('.subscribe');
+const buttonContact = document.querySelector('.send-question-button');
 
-buttonPlayStoreLink.addEventListener('click', () => {
-    window.open('https://play.google.com/store/apps/details?id=com.valwind.app', '_blank');
+buttonContact.addEventListener('click', () => {
+    window.open('https://kuska1.github.io', '_blank');
 });
 
-const buttonFdroidLink = document.querySelector('.subscribe');
-
-buttonFdroidLink.addEventListener('click', () => {
-    window.open('https://f-droid.org/packages/com.valwind.app/', '_blank');
-});
